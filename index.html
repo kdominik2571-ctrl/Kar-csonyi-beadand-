@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varázslatos Karácsonyi Vásár</title>
+    
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-sleigh me-2"></i>Téli Vásár</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#kezdolap">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#programok">Programok</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galéria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kapcsolat">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="kezdolap" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Üdvözöljük a Varázslatos<br>Karácsonyi Vásáron!</h1>
+            <p class="lead mb-4">Forralt bor, kézműves termékek és ünnepi hangulat várja Önt és családját.</p>
+            <a href="#programok" class="btn btn-xmas"><i class="fas fa-gift me-2"></i>Nézze meg a programokat</a>
+        </div>
+    </header>
+
+    <section class="countdown-box">
+        <div class="container">
+            <h2 class="mb-4">Még ennyi idő van Karácsonyig:</h2>
+            <div class="row justify-content-center" id="countdown">
+                <div class="col-3 col-md-2"><div class="timer-segment" id="days">00</div>nap</div>
+                <div class="col-3 col-md-2"><div class="timer-segment" id="hours">00</div>óra</div>
+                <div class="col-3 col-md-2"><div class="timer-segment" id="minutes">00</div>perc</div>
+                <div class="col-3 col-md-2"><div class="timer-segment" id="seconds">00</div>mp</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programok" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-danger">Mi várja Önt?</h2>
+                <p>Ízelítő a vásár kínálatából</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-mug-hot card-icon"></i>
+                            <h3 class="card-title" class="card h-100 feature-card text-center p-4">Gasztro Élmények</h3>
+                            <p class="card-text">Forralt bor, kürtőskalács, sült gesztenye és hagyományos magyar ételek széles választéka.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-gifts card-icon"></i>
+                            <h3 class="card-title" class="card h-100 feature-card text-center p-4">Kézzel Készített Portékák</h3>
+                            <p class="card-text">Egyedi, kézzel készített ajándékok helyi termelőktől. Kerámia, fa játékok és díszek.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-skating card-icon"></i>
+                            <h3 class="card-title" class="card h-100 feature-card text-center p-4">Korcsolyapálya</h3>
+                            <p class="card-text">Ingyenes korcsolyapálya kicsiknek és nagyoknak, hangulatos zenével és fényekkel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="galeria" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Hangulatképek</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1481391243133-f96216dcb5d2?auto=format&fit=crop&q=80&w=1200&h=600" class="d-block w-100" alt="Karácsony 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1513297887119-d46091b24bfa?auto=format&fit=crop&q=80&w=1200&h=600" class="d-block w-100" alt="Karácsony 3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Előző</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Következő</span>
+            </button>
+        </div> </div> </section>
+        
+    <footer id="kapcsolat">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3>Kapcsolat</h3>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 1051 Budapest, Szent István tér</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@karacsonyivasar.hu</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3>Nyitvatartás</h3>
+                    <ul class="list-unstyled">
+                        <li>Hétfő - Csütörtök: 10:00 - 20:00</li>
+                        <li>Péntek - Szombat: 10:00 - 22:00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Minden jog fenntartva</p>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 20px; border: none;">
+                <div class="modal-header" style="background-color: #b33939; color: white; border-radius: 20px 20px 0 0;">
+                    <h5 class="modal-title" id="modalTitle">Információ</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <p id="modalBodyText" class="fs-5"></p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-danger px-4" style="background-color: #b33939; border-radius: 10px;" data-bs-dismiss="modal">Értem</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
